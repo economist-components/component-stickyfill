@@ -1,0 +1,6 @@
+/* stylelint-disable selector-no-universal */
+
+.stickyfill > * {
+  position: sticky;
+  top: 0;
+}
