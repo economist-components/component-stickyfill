@@ -21,6 +21,10 @@ export default class Sticky extends React.Component {
     }
   }
 
+  componentDidUpdate() {
+    stickyfill.rebuild();
+  }
+
   componentWillUnmount() {
     const children = findDOMNode(this).children;
     for (let i = 0; i < children.length; i += 1) {
