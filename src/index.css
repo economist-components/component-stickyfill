@@ -1,4 +1,5 @@
 /* stylelint-disable selector-no-universal */
+/* all children are sticky */
 
 .stickyfill > * {
   position: sticky;
