@@ -1,21 +1,23 @@
 /* stylelint-disable selector-no-universal */
-
+/* easy trick */
 .stickyfill > * {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
-
 .sticky-example {
   width: 300px;
   height: 1000px;
   margin: 0 auto;
+  /* stylelint-disable no-indistinguishable-colors */
+  /* This is just an example */
   box-shadow:
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
-}
+  /* stylelint-enable */
 
+}
 .sticky-element {
   box-sizing: border-box;
   top: 10px;

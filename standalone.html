@@ -17,7 +17,6 @@ pre[class*&#x3D;&quot;language-&quot;] {
 	background: none;
 	text-shadow: 0 1px white;
 	font-family: Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;
-	direction: ltr;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -197,7 +196,12 @@ pre[class*&#x3D;&quot;language-&quot;] {
         <div id="component-preview">
       <script>
       window.addEventListener('load', function () {
-        require('react-dom').render(require('example'),document.getElementById('component-preview'));
+        function _interopRequireDefault(obj) {
+            return obj && obj.__esModule ? obj : {
+                'default': obj
+            };
+        }
+        require('react-dom').render(_interopRequireDefault(require('example')).default,document.getElementById('component-preview'));
       });
       </script>
     </div>
