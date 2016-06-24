@@ -22,6 +22,7 @@ export default class Sticky extends React.Component {
   }
 
   componentDidUpdate() {
+    // force a rebuild at every change
     stickyfill.rebuild();
   }
 
@@ -40,7 +41,6 @@ export default class Sticky extends React.Component {
       </Element>
     );
   }
-
 }
 
 if (process.env.NODE_ENV !== 'production') {
