@@ -38,12 +38,12 @@ import Sticky from 'component-stickyfill';
 return <Sticky><div className="some-sticky-child" /></Sticky>;
 ```
 
-For more examples on usage, see [`src/example.es6`](./src/example.es6).
+For more examples on usage, see [`src/example.js`](./src/example.js).
 
 ## Install
 
 ```bash
-npm i -S component-stickyfill
+npm i -S @economist/component-stickyfill
 ```
 
 ## Run tests
