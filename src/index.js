@@ -1,16 +1,9 @@
 import React from 'react';
 import { findDOMNode } from 'react-dom';
+import PropTypes from 'prop-types';
 import Stickyfill from 'stickyfill';
 let stickyfill = null;
 export default class Sticky extends React.Component {
-
-  static get defaultProps() {
-    return {
-      className: '',
-      tag: 'div',
-    };
-  }
-
   componentDidMount() {
     if (stickyfill === null) {
       stickyfill = Stickyfill();
@@ -43,10 +36,15 @@ export default class Sticky extends React.Component {
   }
 }
 
+Sticky.defaultProps = {
+  className: '',
+  tag: 'div',
+};
+
 if (process.env.NODE_ENV !== 'production') {
   Sticky.propTypes = {
-    className: React.PropTypes.string,
-    tag: React.PropTypes.string,
-    children: React.PropTypes.node.isRequired,
+    className: PropTypes.string,
+    tag: PropTypes.string,
+    children: PropTypes.node.isRequired,
   };
 }
